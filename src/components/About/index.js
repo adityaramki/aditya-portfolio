@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faHtml5, faJava, faJsSquare, faPython, faUnity } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGit, faGitAlt, faHtml5, faJava, faJsSquare, faPython, faReact, faUnity, faUntappd } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 
@@ -33,7 +33,44 @@ const About = () => {
                         During this upcoming summer (2025), I will be working as an Informational Technology Intern at Humana and I'm very excited about this opportunity!
                     </p>
                     <p>Additionally, I'm always open to working on projects and ready to contribute my enthusiasm and hard work to any team I join. Feel free to <Link to="/contact">contact me</Link> for collaboration opportunites and more.</p>
-                    
+                    <h2>Skills</h2>
+                    <div className='skills'>
+                        <ul className='skills-icons'>
+                            <li>
+                                <FontAwesomeIcon icon={faPython} color='#ffde57' />
+                                <p>Python</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faJava} color='#FFA518' />
+                                <p>Java</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faHtml5} color='#F06529' />
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faCss3} color='#28A4D9' />
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faJsSquare} color='#EFD81D' />
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faReact} color='#61DAFB' />
+                                <p>React</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faGitAlt} color='#f34f29' />
+                                <p>Git</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faUnity} color='#000000' />
+                                <p>Unity</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
                 <div className='stage-cube-cont'>
                     <div className='cubespinner'>
