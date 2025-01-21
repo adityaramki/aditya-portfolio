@@ -1,0 +1,29 @@
+.github {
+    ul {
+        position: relative;
+        top: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: left;
+        margin: 0;
+    
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 100px;
+                line-height: 16px;
+                
+    
+                &:hover svg {
+                    color: #ffffff;
+                }
+            }
+        }
+    
+    
+    
+    }
+}
