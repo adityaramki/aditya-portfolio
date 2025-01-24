@@ -36,7 +36,7 @@ const Home = () => {
                 <h2>Computer Science Student at Michigan State University</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
-            <img src={image}/>
+            <img src={image} alt=""/>
 
         </div>
         <Loader type='line-scale-pulse-out' color="#16eec0"/>
