@@ -5,7 +5,7 @@ Hi there! This is my coding portfolio that I built with ReactJS and SCSS. I deve
 ## Installation
 1. Clone the repository: git clone https://github.com/adityaramki/aditya-portfolio.git
 
-2. Navigate to the project directory: cd PortfolioWebsite
+2. Navigate to the project directory: cd aditya-portfolio
 
 3. Install dependencies: npm install
 
