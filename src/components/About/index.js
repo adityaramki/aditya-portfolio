@@ -70,7 +70,13 @@ const About = () => {
                             idx = {10}
                         />
                     </h1>
-                    <p>Hi there! I'm a college sophomore with a solid foundation in Python, Java, and analytical thinking. During Summer 2025, I interned at Humana as a Software Engineering Intern working in Enterprise AI. I got some amazing GenAI experience building an internal self-service for prompt based insight extraction of long healthcare documents. 
+                    <p>
+Hi, my name is Aditya Ramakrishnan and I’m a second year student studying computer science at Michigan State University, looking to graduate in May 2027. I’m interested in pursuing software engineering with a specialization in Artificial Intelligence. 
+
+<p>In terms of campus involvement, I was a project lead this past semester at Imagine Software in charge of leading a team to develop a sales forecasting model. I’m also a consultant at 180 degrees consulting and that has been a great opportunity to expand my business acumen and work with all sorts of clients.</p>
+
+<p>During Summer 2025, I worked at Humana as a Software Engineering Intern working in Enterprise AI. I was tasked with working on an Enterprise GenAI self-service for prompt based insight extraction of long healthcare documents.</p>
+ 
                     </p>
                     <p>Additionally, I'm always open to working on projects and looking to recruit for Software Engineering Internships for Summer 2026! Feel free to <Link to="/contact">contact me</Link> for collaboration opportunites, queries, and more!</p>
                     
