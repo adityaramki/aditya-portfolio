@@ -1,0 +1,161 @@
+.work-page {
+    .work-experiences {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    .work-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        overflow: hidden;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            border-color: #16eec0;
+        }
+        
+        &.expanded {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            border-color: #16eec0;
+        }
+    }
+    
+    .work-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .work-title {
+        h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .company-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+    }
+    
+    .work-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-end;
+        
+        .work-duration,
+        .work-location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ffffff;
+            font-size: 1.1rem;
+            opacity: 1;
+        }
+        
+        .expand-indicator {
+            margin-top: 0.5rem;
+            
+            .arrow {
+                color: #16eec0;
+                font-size: 0.8rem;
+                transition: all 0.3s ease;
+                
+                &.expanded {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    
+    .work-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        
+        &.expanded {
+            max-height: 500px;
+            margin-top: 1rem;
+        }
+    }
+    
+    .work-description {
+        margin-bottom: 1rem;
+        
+        p {
+            color: #ffffff;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin: 0;
+        }
+    }
+    
+    .work-technologies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        
+        .tech-tag {
+            background: rgba(22, 238, 192, 0.2);
+            color: white;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(22, 238, 192, 0.3);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: rgba(22, 238, 192, 0.3);
+                transform: translateY(-1px);
+            }
+        }
+    }
+}
+
+// Responsive design
+@media (max-width: 1024px) {
+    .work-page {
+        .work-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .work-meta {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .work-page {
+        .work-card {
+            padding: 1rem;
+        }
+        
+        .work-title h3 {
+            font-size: 1.3rem;
+        }
+    }
+} 
