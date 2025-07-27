@@ -26,28 +26,28 @@ const Work = () => {
             id: 1,
             company: "Humana",
             position: "Software Engineering Intern",
-            location: "Louisville, KY",
+            location: "Remote",
             duration: "Summer 2025",
-            description: "Worked in Enterprise AI developing an Enterprise GenAI self-service for prompt-based insight extraction of long healthcare documents. Collaborated with cross-functional teams to implement AI solutions that improved document processing efficiency and accuracy.",
-            technologies: ["Python", "AI/ML", "Healthcare", "Enterprise Software", "GenAI"]
+            description: "• Built backend for a GenAI stand-up reporting tool at the Humana IT Intern Hackathon using <strong>FastAPI</strong>, <strong>Python</strong>, and <strong>LLMs</strong>, extracting blockers and key topics from <strong>8+</strong> meetings and reducing reporting time by <strong>80%</strong>\n\n• Developed a GenAI <strong>REST API</strong> service using <strong>FastAPI</strong> and <strong>Python</strong> to generate custom summaries of healthcare documents via Humana's <strong>Large Language Model (LLM) Gateway</strong>, streamlining analysis for <strong>10+</strong> teams\n\n• Wrote comprehensive unit tests to validate a GenAI summarization tool using <strong>Pytest</strong>, achieving <strong>85%</strong> code coverage measured by <strong>coverage.py</strong>, enhancing backend service reliability\n\n• Moderated a fireside chat with <strong>100+</strong> attendees, developing strategic questions and leading a live discussion with Humana's SVP of Enterprise AI to explore the role of human-centered AI in transforming healthcare operations",
+            technologies: ["Python", "FastAPI", "REST APIs", "LLMs", "Docker", "Pytest"]
         },
         {
             id: 2,
-            company: "Imagine Software",
-            position: "Project Lead",
-            location: "Michigan State University",
-            duration: "Fall 2024",
-            description: "Led a team in developing a sales forecasting model using time series analysis and machine learning techniques. Managed project timelines, coordinated team efforts, and delivered a working prototype for business applications.",
-            technologies: ["Python", "Machine Learning", "Time Series Analysis", "Leadership", "Project Management"]
-        },
-        {
-            id: 3,
             company: "180 Degrees Consulting",
             position: "Consultant",
             location: "Michigan State University",
             duration: "2024 - Present",
-            description: "Working with various clients to provide business consulting services, expanding business acumen and developing strategic solutions for real-world problems.",
-            technologies: ["Business Strategy", "Client Relations", "Problem Solving", "Analytics"]
+            description: "• Conceptualized and created a functional POC for a university-exclusive reselling platform for MSU students using <strong>ReactJS</strong>, visualizing the market opportunity and projecting revenue of up to <strong>$98,000/yr</strong> to prospective investors\n\n• Designed and developed a <strong>ReactJS</strong> website for a local trucking company, deployed on <strong>Vercel</strong>, increasing quote request submissions by <strong>25%</strong> through improved UX and optimized CTAs\n\n• Advised an overseas ed-tech client on industry strategy by developing <strong>8</strong> key performance metrics and benchmarking them against industry standards to strengthen client's market positioning\n\n• Collaborated with <strong>7</strong> business analysts to advise a local baking business, providing website optimization advice and training the owner on data collection methods to enhance customer insights and accelerate growth",
+            technologies: ["Digital Transformations", "Client Work", "Professional Development", "Data Analytics"]
+        },
+        {
+            id: 3,
+            company: "Imagine Software",
+            position: "Project Lead",
+            location: "Michigan State University",
+            duration: "Fall 2024",
+            description: "• Led a team of <strong>4</strong> to create a sales forecasting model using <strong>Python</strong> and the <strong>sktime</strong> library to increase Imagine Software's project variety and expand its service offerings in predictive analytics\n\n• Engineered a full-stack mobile application in a team of <strong>6</strong> by utilizing <strong>React Native</strong> and <strong>Firebase</strong> in order to improve the nutritional awareness of users\n\n• Engaged with a community of <strong>500+</strong> computer science students by collaborating on mobile and web application development, synthesizing a supportive environment for idea-sharing and innovation",
+            technologies: ["React Native", "Google Firebase", "Sktime Forecasting", "Project Management", "Networking"]
         }
     ];
 
@@ -62,7 +62,7 @@ const Work = () => {
                             idx={10}
                         />
                     </h1>
-                    <p>Here's a summary of my professional experience and internships. Each role has helped me develop different skills and gain valuable insights into the tech industry.</p>
+                    <p>Here's a summary of my professional experience and internships. From enhancing my API development toolkit at Humana, to expanding my business acumen at 180 Degrees Consulting, I've had a diverse set of experiences that have helped me grow as a software engineer and professional.</p>
                     
                     <div className='work-experiences'>
                         {workExperiences.map((experience) => (
@@ -88,14 +88,11 @@ const Work = () => {
                                             <FontAwesomeIcon icon={faMapMarkerAlt} color="#ffffff" />
                                             <span>{experience.location}</span>
                                         </div>
-                                        <div className='expand-indicator'>
-                                            <span className={`arrow ${expandedCard === experience.id ? 'expanded' : ''}`}>▼</span>
-                                        </div>
                                     </div>
                                 </div>
                                 <div className={`work-content ${expandedCard === experience.id ? 'expanded' : ''}`}>
                                     <div className='work-description'>
-                                        <p>{experience.description}</p>
+                                        <p dangerouslySetInnerHTML={{ __html: experience.description }}></p>
                                     </div>
                                     <div className='work-technologies'>
                                         {experience.technologies.map((tech, index) => (
