@@ -3,7 +3,6 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faPython, faReact, faUnity, faDocker } from '@fortawesome/free-brands-svg-icons'
-import { faChartLine } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import firebaseLogo from '../../assets/images/firebase_logo-removebg-preview.png'
@@ -20,7 +19,7 @@ const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const [activeSection, setActiveSection] = useState('languages') // Default to languages being open
     const [cubePosition, setCubePosition] = useState({ x: 0, y: 0 })
-    const [isHovering, setIsHovering] = useState(false)
+    const [setIsHovering] = useState(false)
     
     useEffect(() => {
         const timeoutId = setTimeout(() => {
