@@ -33,7 +33,7 @@ const About = () => {
                     <p>Hi there! I'm a college freshman with a solid foundation in Python, Java, and analytical thinking. I'm always excited to become more knowledgeable and to learn new toolsets through internship experience.
                         During this upcoming summer (2025), I will be working as an Enterprise AI Intern at Humana and I'm very excited about this opportunity!
                     </p>
-                    <p>Additionally, I'm always open to working on projects and ready to contribute my enthusiasm and hard work to any team I join. Feel free to <Link to="/contact">contact me</Link> for collaboration opportunites and more.</p>
+                    <p>Additionally, I'm always open to working on projects and ready to contribute my enthusiasm and hard work to any team I join! Feel free to <Link to="/contact">contact me</Link> for collaboration opportunites and more.</p>
                     
                     <div className='skills'>
                         <div className='skill-category'>
