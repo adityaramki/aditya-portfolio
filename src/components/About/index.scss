@@ -6,44 +6,284 @@
     right: 0;
     overflow: visible;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
-    padding-top: 5%;
+    padding-top: 15%;
+}
+
+// Floating particles
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #16eec0;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 0 6px #16eec0;
+    
+    &:nth-child(1) {
+        top: 5%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+    
+    &:nth-child(2) {
+        top: 10%;
+        right: 15%;
+        animation-delay: 0.3s;
+    }
+    
+    &:nth-child(3) {
+        top: 15%;
+        left: 25%;
+        animation-delay: 0.6s;
+    }
+    
+    &:nth-child(4) {
+        top: 20%;
+        right: 8%;
+        animation-delay: 0.9s;
+    }
+    
+    &:nth-child(5) {
+        top: 25%;
+        left: 35%;
+        animation-delay: 1.2s;
+    }
+    
+    &:nth-child(6) {
+        top: 30%;
+        right: 25%;
+        animation-delay: 1.5s;
+    }
+    
+    &:nth-child(7) {
+        top: 35%;
+        left: 15%;
+        animation-delay: 1.8s;
+    }
+    
+    &:nth-child(8) {
+        top: 40%;
+        right: 35%;
+        animation-delay: 2.1s;
+    }
+    
+    &:nth-child(9) {
+        top: 45%;
+        left: 5%;
+        animation-delay: 2.4s;
+    }
+    
+    &:nth-child(10) {
+        top: 50%;
+        right: 18%;
+        animation-delay: 2.7s;
+    }
+    
+    &:nth-child(11) {
+        top: 55%;
+        left: 30%;
+        animation-delay: 3s;
+    }
+    
+    &:nth-child(12) {
+        top: 60%;
+        right: 8%;
+        animation-delay: 3.3s;
+    }
+    
+    &:nth-child(13) {
+        top: 65%;
+        left: 20%;
+        animation-delay: 3.6s;
+    }
+    
+    &:nth-child(14) {
+        top: 70%;
+        right: 28%;
+        animation-delay: 3.9s;
+    }
+    
+    &:nth-child(15) {
+        top: 75%;
+        left: 10%;
+        animation-delay: 4.2s;
+    }
+    
+    &:nth-child(16) {
+        top: 80%;
+        right: 12%;
+        animation-delay: 4.5s;
+    }
+    
+    &:nth-child(17) {
+        top: 85%;
+        left: 25%;
+        animation-delay: 4.8s;
+    }
+    
+    &:nth-child(18) {
+        top: 90%;
+        right: 22%;
+        animation-delay: 5.1s;
+    }
+    
+    &:nth-child(19) {
+        top: 95%;
+        left: 15%;
+        animation-delay: 5.4s;
+    }
+    
+    &:nth-child(20) {
+        top: 100%;
+        right: 30%;
+        animation-delay: 5.7s;
+    }
+    
+    &:nth-child(21) {
+        top: 105%;
+        left: 8%;
+        animation-delay: 6s;
+    }
+    
+    &:nth-child(22) {
+        top: 110%;
+        right: 18%;
+        animation-delay: 6.3s;
+    }
+    
+    &:nth-child(23) {
+        top: 115%;
+        left: 35%;
+        animation-delay: 6.6s;
+    }
+    
+    &:nth-child(24) {
+        top: 120%;
+        right: 25%;
+        animation-delay: 6.9s;
+    }
+    
+    &:nth-child(25) {
+        top: 125%;
+        left: 12%;
+        animation-delay: 7.2s;
+    }
+    
+    &:nth-child(26) {
+        top: 130%;
+        right: 35%;
+        animation-delay: 7.5s;
+    }
+    
+    &:nth-child(27) {
+        top: 135%;
+        left: 22%;
+        animation-delay: 7.8s;
+    }
+    
+    &:nth-child(28) {
+        top: 140%;
+        right: 8%;
+        animation-delay: 8.1s;
+    }
+    
+    &:nth-child(29) {
+        top: 145%;
+        left: 28%;
+        animation-delay: 8.4s;
+    }
+    
+    &:nth-child(30) {
+        top: 150%;
+        right: 15%;
+        animation-delay: 8.7s;
+    }
+    
+    &:nth-child(31) {
+        top: 155%;
+        left: 18%;
+        animation-delay: 9s;
+    }
+    
+    &:nth-child(32) {
+        top: 160%;
+        right: 28%;
+        animation-delay: 9.3s;
+    }
+    
+    &:nth-child(33) {
+        top: 165%;
+        left: 8%;
+        animation-delay: 9.6s;
+    }
+    
+    &:nth-child(34) {
+        top: 170%;
+        right: 22%;
+        animation-delay: 9.9s;
+    }
+    
+    &:nth-child(35) {
+        top: 175%;
+        left: 25%;
+        animation-delay: 10.2s;
+    }
+    
+    &:nth-child(36) {
+        top: 180%;
+        right: 12%;
+        animation-delay: 10.5s;
+    }
+    
+    &:nth-child(37) {
+        top: 185%;
+        left: 15%;
+        animation-delay: 10.8s;
+    }
+    
+    &:nth-child(38) {
+        top: 190%;
+        right: 30%;
+        animation-delay: 11.1s;
+    }
+    
+    &:nth-child(39) {
+        top: 195%;
+        left: 20%;
+        animation-delay: 11.4s;
+    }
+    
+    &:nth-child(40) {
+        top: 200%;
+        right: 18%;
+        animation-delay: 11.7s;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.2);
+        opacity: 1;
+    }
 }
 
 .cube-container {
     width: 200px;
     height: 200px;
     position: relative;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     
-    &.languages-cube {
-        .cubespinner {
-            animation-delay: 0s;
-        }
+    &:hover {
+        z-index: 15;
     }
-    
-    &.devtools-cube {
-        .cubespinner {
-            animation-delay: -4s;
-        }
-    }
-    
-    &.libraries-cube {
-        .cubespinner {
-            animation-delay: -8s;
-        }
-    }
-}
-
-// Bottom row container for devtools and libraries cubes
-.bottom-cubes {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 500px;
-    gap: 40px;
 }
 
 .cubespinner {
@@ -66,6 +306,13 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 20px 0px lightgreen;
+        transition: all 0.5s ease;
+        
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
     }
 
     .face1 {
@@ -115,14 +362,50 @@
     margin-top: 30px;
     
     .skill-category {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         
-        h3 {
-            font-size: 18px;
-            color: #ffffff;
-            margin-bottom: 20px;
-            font-family: 'Coolvetica';
-            font-weight: 400;
+        .skill-header {
+            width: 100%;
+            background: transparent;
+            border: 2px solid #16eec0;
+            border-radius: 8px;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
+            
+            &:hover {
+                background: rgba(22, 238, 192, 0.1);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(22, 238, 192, 0.2);
+            }
+            
+            &.active {
+                background: rgba(22, 238, 192, 0.15);
+                border-color: #ffffff;
+            }
+            
+            h3 {
+                font-size: 18px;
+                color: #ffffff;
+                margin: 0;
+                font-family: 'Coolvetica';
+                font-weight: 400;
+            }
+            
+            .toggle-icon {
+                font-size: 24px;
+                color: #16eec0;
+                font-weight: bold;
+                transition: transform 0.3s ease;
+            }
+            
+            &.active .toggle-icon {
+                transform: rotate(180deg);
+            }
         }
         
         .skills-icons {
@@ -133,6 +416,7 @@
             max-width: 1100px;
             margin: 0;
             padding: 0;
+            animation: slideDown 0.3s ease-out;
             
             li {
                 transition: 0.3s;
@@ -150,10 +434,18 @@
                     height: 60px;
                 }
                 
+                img {
+                    margin: 0.5rem;
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                }
+                
                 p {
                     margin: 0.2rem 0 0 0;
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     text-align: center;
+                    font-weight: 500;
                 }
                 
                 &:hover {
@@ -164,17 +456,22 @@
     }
 }
 
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Responsive Design for About Page */
 @media (max-width: 1200px) {
     .stage-cube-cont {
         width: 45%;
-        gap: 50px;
         padding-top: 3%;
-    }
-    
-    .bottom-cubes {
-        max-width: 450px;
-        gap: 30px;
     }
     
     .cube-container {
@@ -189,8 +486,19 @@
                 width: 180px;
                 height: 180px;
                 font-size: 80px;
+                
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
             }
         }
+    }
+    
+    .particle {
+        width: 3px;
+        height: 3px;
+        box-shadow: 0 0 4px #16eec0;
     }
 }
 
@@ -198,17 +506,8 @@
     .stage-cube-cont {
         width: 100%;
         position: relative;
-        flex-direction: column;
-        gap: 40px;
         padding-top: 30px;
         margin-top: 30px;
-    }
-    
-    .bottom-cubes {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        max-width: 100%;
     }
     
     .cube-container {
@@ -223,14 +522,33 @@
                 width: 150px;
                 height: 150px;
                 font-size: 60px;
+                
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
             }
         }
     }
     
+    .particle {
+        width: 2px;
+        height: 2px;
+        box-shadow: 0 0 3px #16eec0;
+    }
+    
     .skills {
         .skill-category {
-            h3 {
-                font-size: 16px;
+            .skill-header {
+                padding: 12px 15px;
+                
+                h3 {
+                    font-size: 16px;
+                }
+                
+                .toggle-icon {
+                    font-size: 20px;
+                }
             }
             
             .skills-icons {
@@ -242,8 +560,14 @@
                         height: 50px;
                     }
                     
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    
                     p {
-                        font-size: 0.7rem;
+                        font-size: 0.9rem;
+                        font-weight: 500;
                     }
                 }
             }
@@ -253,13 +577,8 @@
 
 @media (max-width: 480px) {
     .stage-cube-cont {
-        gap: 30px;
         padding-top: 20px;
         margin-top: 20px;
-    }
-    
-    .bottom-cubes {
-        gap: 30px;
     }
     
     .cube-container {
@@ -274,14 +593,33 @@
                 width: 120px;
                 height: 120px;
                 font-size: 50px;
+                
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
             }
         }
     }
     
+    .particle {
+        width: 1px;
+        height: 1px;
+        box-shadow: 0 0 2px #16eec0;
+    }
+    
     .skills {
         .skill-category {
-            h3 {
-                font-size: 14px;
+            .skill-header {
+                padding: 10px 12px;
+                
+                h3 {
+                    font-size: 14px;
+                }
+                
+                .toggle-icon {
+                    font-size: 18px;
+                }
             }
             
             .skills-icons {
@@ -291,8 +629,14 @@
                         height: 40px;
                     }
                     
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    
                     p {
-                        font-size: 0.6rem;
+                        font-size: 0.8rem;
+                        font-weight: 500;
                     }
                 }
             }
