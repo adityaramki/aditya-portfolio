@@ -19,7 +19,6 @@ const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const [activeSection, setActiveSection] = useState('languages') // Default to languages being open
     const [cubePosition, setCubePosition] = useState({ x: 0, y: 0 })
-    const [setIsHovering] = useState(false)
     
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -34,8 +33,6 @@ const About = () => {
     };
     
     const handleCubeHover = (event) => {
-        setIsHovering(true);
-        
         // Get mouse position relative to the cube
         const rect = event.currentTarget.getBoundingClientRect();
         const mouseX = event.clientX - rect.left;
@@ -58,7 +55,6 @@ const About = () => {
     };
     
     const handleCubeLeave = () => {
-        setIsHovering(false);
         // Don't reset position - let cube stay where it glided to
     };
     
