@@ -1,13 +1,50 @@
 .stage-cube-cont {
     width: 50%;
     height: 100%;
-    top: 5%;
-    padding-top: 18%;
+    top: 0%;
+    padding-top: 5%;
     margin-left: 0;
     position: absolute;
     right: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
 
+.cube-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+    &.languages-cube {
+        .cubespinner {
+            animation-delay: 0s;
+        }
+    }
+    
+    &.devtools-cube {
+        .cubespinner {
+            animation-delay: -4s;
+        }
+    }
+    
+    &.libraries-cube {
+        .cubespinner {
+            animation-delay: -8s;
+        }
+    }
+}
+
+// Bottom row container for devtools and libraries cubes
+.bottom-cubes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    gap: 40px;
 }
 
 .cubespinner {
@@ -71,5 +108,59 @@
     }
     83% {
         transform: rotateX(90deg);
+    }
+}
+
+// Skills section styling
+.skills {
+    margin-top: 30px;
+    
+    .skill-category {
+        margin-bottom: 40px;
+        
+        h3 {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+        }
+        
+        .skills-icons {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            max-width: 1100px;
+            margin: 0;
+            padding: 0;
+            
+            li {
+                transition: 0.3s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 0.9rem;
+                margin: 0.5rem 1rem 0.5rem 0;
+                
+                svg {
+                    margin: 0.5rem;
+                    width: 60px;
+                    height: 60px;
+                }
+                
+                p {
+                    margin: 0.2rem 0 0 0;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+                
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
     }
 }
