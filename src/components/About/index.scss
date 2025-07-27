@@ -1,17 +1,16 @@
 .stage-cube-cont {
     width: 50%;
-    height: 100%;
-    top: 0%;
-    padding-top: 5%;
-    margin-left: 0;
+    height: auto;
     position: absolute;
+    top: 0;
     right: 0;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 60px;
+    padding-top: 5%;
 }
 
 .cube-container {
@@ -159,6 +158,142 @@
                 
                 &:hover {
                     transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 1200px) {
+    .stage-cube-cont {
+        width: 45%;
+        gap: 50px;
+        padding-top: 3%;
+    }
+    
+    .bottom-cubes {
+        max-width: 450px;
+        gap: 30px;
+    }
+    
+    .cube-container {
+        width: 180px;
+        height: 180px;
+        
+        .cubespinner {
+            transform-origin: 90px 90px 0;
+            margin-left: calc(50% - 90px);
+            
+            div {
+                width: 180px;
+                height: 180px;
+                font-size: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .stage-cube-cont {
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    
+    .bottom-cubes {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        max-width: 100%;
+    }
+    
+    .cube-container {
+        width: 150px;
+        height: 150px;
+        
+        .cubespinner {
+            transform-origin: 75px 75px 0;
+            margin-left: calc(50% - 75px);
+            
+            div {
+                width: 150px;
+                height: 150px;
+                font-size: 60px;
+            }
+        }
+    }
+    
+    .skills {
+        .skill-category {
+            h3 {
+                font-size: 16px;
+            }
+            
+            .skills-icons {
+                justify-content: center;
+                
+                li {
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    
+                    p {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .stage-cube-cont {
+        gap: 30px;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    
+    .bottom-cubes {
+        gap: 30px;
+    }
+    
+    .cube-container {
+        width: 120px;
+        height: 120px;
+        
+        .cubespinner {
+            transform-origin: 60px 60px 0;
+            margin-left: calc(50% - 60px);
+            
+            div {
+                width: 120px;
+                height: 120px;
+                font-size: 50px;
+            }
+        }
+    }
+    
+    .skills {
+        .skill-category {
+            h3 {
+                font-size: 14px;
+            }
+            
+            .skills-icons {
+                li {
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    
+                    p {
+                        font-size: 0.6rem;
+                    }
                 }
             }
         }

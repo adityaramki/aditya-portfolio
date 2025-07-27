@@ -1,18 +1,57 @@
 
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
-
 
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #ffffff;
   background: #128352;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 

@@ -1,12 +1,12 @@
 .nav-bar {
     background: #181818;
     width: 60px;
-    height:100%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 3;
     min-height: 500px;
-
 }
 
 nav {
@@ -87,6 +87,7 @@ nav {
         }
     }
 }
+
 ul {
     position: absolute;
     bottom: 20px;
@@ -109,7 +110,65 @@ ul {
             }
         }
     }
+}
 
+/* Responsive Design for Sidebar */
+@media (max-width: 768px) {
+    .nav-bar {
+        width: 50px;
+        
+        nav {
+            a {
+                font-size: 18px;
+                line-height: 45px;
+                height: 45px;
+                
+                &:after {
+                    font-size: 8px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        
+        ul {
+            bottom: 15px;
+            
+            li {
+                a {
+                    font-size: 13px;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+}
 
-
+@media (max-width: 480px) {
+    .nav-bar {
+        width: 45px;
+        
+        nav {
+            a {
+                font-size: 16px;
+                line-height: 40px;
+                height: 40px;
+                
+                &:after {
+                    font-size: 7px;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+        
+        ul {
+            bottom: 10px;
+            
+            li {
+                a {
+                    font-size: 12px;
+                    padding: 4px 0;
+                }
+            }
+        }
+    }
 }
