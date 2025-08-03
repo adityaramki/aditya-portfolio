@@ -7,6 +7,8 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt as faExternalLink } from '@fortawesome/free-solid-svg-icons'
 import minskoffImage from '../../assets/images/minskoff.jpg'
 import salesForecastingImage from '../../assets/images/salesforecasting.jpeg'
+import scrumMateVideo from '../../assets/vids/ScrumMate.mp4'
+import scrumMateLogo from '../../assets/images/scrummatelogo.png'
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -19,7 +21,7 @@ const Projects = () => {
         return () => clearTimeout(timeoutId);
     }, []);
 
-    const projects = [
+        const projects = [
         {
             id: 1,
             title: "MSU Broad RAG Chatbot",
@@ -30,10 +32,19 @@ const Projects = () => {
         },
         {
             id: 2,
+            title: "ScrumMate: An AI Project Manager",
+            description: "My team and I developed ScrumMate at the Humana 2025 IT Intern Hackathon. It's a GenAI stand-up reporting tool that displays a dashboard of insights ranging from blockers to key topics from stand-up team meetings along with metrics like individual participation.",
+            githubUrl: "#",
+            technologies: ["FastAPI", "Next.js", "LLMs", "TailwindCSS", "Supabase", "Transcription"],
+            image: scrumMateLogo,
+            video: scrumMateVideo
+        },
+        {
+            id: 3,
             title: "Sales Forecaster",
             description: "A simple predictive model using sktime forecasting to predict future sales/outputs given time series data from CSV files.",
             githubUrl: "https://github.com/adityaramki/sktime-forecaster",
-            technologies: ["Python", "sktime", "Jupyter", "Time Series", "Forecasting"],
+            technologies: ["Python", "sktime", "Time Series", "Forecasting"],
             image: salesForecastingImage
         }
     ];
@@ -59,7 +70,7 @@ const Projects = () => {
                                         <img 
                                             src={project.image} 
                                             alt={project.title} 
-                                            className='project-image'
+                                            className={`project-image ${project.id === 2 ? 'scrummate-logo' : ''}`}
                                         />
                                     ) : (
                                         <div className='placeholder-image'>
@@ -75,16 +86,32 @@ const Projects = () => {
                                             <span key={index} className='tech-tag'>{tech}</span>
                                         ))}
                                     </div>
-                                    <a 
-                                        href={project.githubUrl} 
-                                        target="_blank" 
-                                        rel="noreferrer" 
-                                        className='project-link'
-                                    >
-                                        <FontAwesomeIcon icon={faGithub} color="#000000" />
-                                        <span>View on GitHub</span>
-                                        <FontAwesomeIcon icon={faExternalLink} color="#000000" />
-                                    </a>
+                                    <div className='project-links'>
+                                        {project.githubUrl !== "#" && (
+                                            <a 
+                                                href={project.githubUrl} 
+                                                target="_blank" 
+                                                rel="noreferrer" 
+                                                className='project-link'
+                                            >
+                                                <FontAwesomeIcon icon={faGithub} color="#000000" />
+                                                <span>View on GitHub</span>
+                                                <FontAwesomeIcon icon={faExternalLink} color="#000000" />
+                                            </a>
+                                        )}
+                                        {project.video && (
+                                            <a 
+                                                href={project.video} 
+                                                target="_blank" 
+                                                rel="noreferrer" 
+                                                className='project-link video-link'
+                                            >
+                                                <FontAwesomeIcon icon={faExternalLink} color="#000000" />
+                                                <span>Watch Demo</span>
+                                                <FontAwesomeIcon icon={faExternalLink} color="#000000" />
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         ))}

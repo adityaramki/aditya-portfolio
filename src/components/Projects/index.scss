@@ -34,6 +34,23 @@
         &:hover {
             transform: scale(1.02);
         }
+        
+        &.scrummate-logo {
+            object-fit: contain;
+            background: rgba(255, 255, 255, 0.05);
+        }
+    }
+    
+    .project-video {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.02);
+        }
     }
     
     .placeholder-image {
@@ -79,9 +96,9 @@
         background: rgba(22, 238, 192, 0.2);
         color: white;
         font-weight: 600;
-        padding: 0.25rem 0.75rem;
+        padding: 0.4rem 1rem;
         border-radius: 20px;
-        font-size: 0.8rem;
+        font-size: 1rem;
         border: 1px solid rgba(22, 238, 192, 0.3);
         transition: all 0.3s ease;
         
@@ -90,6 +107,12 @@
             transform: translateY(-1px);
         }
     }
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .project-link {
@@ -120,6 +143,10 @@
     
     &:hover svg {
         transform: translateX(2px);
+    }
+    
+    &.video-link {
+        // Same styling as regular project links
     }
 }
 
