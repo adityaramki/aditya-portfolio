@@ -2,7 +2,8 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faPython, faReact, faUnity, faDocker } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faPython, faReact, faDocker, faAws, faLinux, faJenkins } from '@fortawesome/free-brands-svg-icons'
+import { faDatabase, faCode, faSnowflake, faDharmachakra, faChartLine, faMicrochip } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import firebaseLogo from '../../assets/images/firebase_logo-removebg-preview.png'
@@ -12,7 +13,6 @@ import fastapiLogo from '../../assets/images/fastapilogo-removebg-preview.png'
 import openaiLogo from '../../assets/images/openailogo-removebg-preview.png'
 import tailwindLogo from '../../assets/images/tailwindlogo-removebg-preview.png'
 import pytestLogo from '../../assets/images/pytestlogo-removebg-preview.png'
-import pygameLogo from '../../assets/images/pygamelogo-removebg-preview.png'
 
 
 const About = () => {
@@ -71,11 +71,11 @@ const About = () => {
                         />
                     </h1>
                     <p>
-Hi, my name is Aditya Ramakrishnan and I’m a second year student studying computer science at Michigan State University, looking to graduate in May 2027. I’m interested in pursuing software engineering with a specialization in Artificial Intelligence. 
+Hi, my name is Aditya Ramakrishnan and I’m a third year student studying computer science at Michigan State University, looking to graduate in May 2028. I’m interested in pursuing software engineering with a specialization in Artificial Intelligence.
 
- 
+
                     </p>
-                    <p>I'm always open to working on projects and looking to recruit for Software Engineering Internships for Summer 2026! Feel free to <Link to="/contact">contact me</Link> for collaboration opportunites, queries, and more!</p>
+                    <p>I'm always open to working on projects and looking to recruit for Software Engineering Internships for Summer 2027! Feel free to <Link to="/contact">contact me</Link> for collaboration opportunites, queries, and more!</p>
                     
                     <div className='skills'>
                         <div className='skill-category'>
@@ -108,12 +108,20 @@ Hi, my name is Aditya Ramakrishnan and I’m a second year student studying comp
                                         <FontAwesomeIcon icon={faJsSquare} color='#EFD81D' />
                                         <p>JavaScript</p>
                                     </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faCode} color='#00599C' />
+                                        <p>C++</p>
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faDatabase} color='#4479A1' />
+                                        <p>SQL</p>
+                                    </li>
                                 </ul>
                             )}
                         </div>
-                        
+
                         <div className='skill-category'>
-                            <button 
+                            <button
                                 className={`skill-header ${activeSection === 'devtools' ? 'active' : ''}`}
                                 onClick={() => toggleSection('devtools')}
                             >
@@ -131,27 +139,43 @@ Hi, my name is Aditya Ramakrishnan and I’m a second year student studying comp
                                         <p>VS Code</p>
                                     </li>
                                     <li>
-                                        <img src={firebaseLogo} alt="Firebase" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
-                                        <p>Google Firebase</p>
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faDocker} color='#2496ED' />
-                                        <p>Docker</p>
+                                        <FontAwesomeIcon icon={faAws} color='#FF9900' />
+                                        <p>AWS</p>
                                     </li>
                                     <li>
                                         <img src={azureDevOpsLogo} alt="Azure DevOps" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
                                         <p>Azure DevOps</p>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon icon={faUnity} color='#000000' />
-                                        <p>Unity</p>
+                                        <FontAwesomeIcon icon={faLinux} color='#000000' />
+                                        <p>Linux</p>
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faDocker} color='#2496ED' />
+                                        <p>Docker</p>
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faDharmachakra} color='#326CE5' />
+                                        <p>Kubernetes</p>
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faSnowflake} color='#29B5E8' />
+                                        <p>Snowflake</p>
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faJenkins} color='#D33833' />
+                                        <p>Jenkins</p>
+                                    </li>
+                                    <li>
+                                        <img src={firebaseLogo} alt="Firebase" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
+                                        <p>Google Firebase</p>
                                     </li>
                                 </ul>
                             )}
                         </div>
-                        
+
                         <div className='skill-category'>
-                            <button 
+                            <button
                                 className={`skill-header ${activeSection === 'libraries' ? 'active' : ''}`}
                                 onClick={() => toggleSection('libraries')}
                             >
@@ -169,6 +193,10 @@ Hi, my name is Aditya Ramakrishnan and I’m a second year student studying comp
                                         <p>ReactJS</p>
                                     </li>
                                     <li>
+                                        <FontAwesomeIcon icon={faMicrochip} color='#34A853' />
+                                        <p>LiteRT</p>
+                                    </li>
+                                    <li>
                                         <img src={openaiLogo} alt="OpenAI" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
                                         <p>OpenAI API</p>
                                     </li>
@@ -181,8 +209,8 @@ Hi, my name is Aditya Ramakrishnan and I’m a second year student studying comp
                                         <p>Pytest</p>
                                     </li>
                                     <li>
-                                        <img src={pygameLogo} alt="Pygame" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
-                                        <p>Pygame</p>
+                                        <FontAwesomeIcon icon={faChartLine} color='#11557C' />
+                                        <p>Matplotlib</p>
                                     </li>
                                 </ul>
                             )}
@@ -261,11 +289,11 @@ Hi, my name is Aditya Ramakrishnan and I’m a second year student studying comp
                                         <FontAwesomeIcon icon={faJsSquare} color='#EFD81D' />
                                     </div>
                                     <div className='face6'>
-                                        <FontAwesomeIcon icon={faPython} color='#ffde57' />
+                                        <FontAwesomeIcon icon={faCode} color='#00599C' />
                                     </div>
                                 </>
                             )}
-                            
+
                             {/* Developer Tools Cube Faces */}
                             {activeSection === 'devtools' && (
                                 <>
@@ -276,20 +304,20 @@ Hi, my name is Aditya Ramakrishnan and I’m a second year student studying comp
                                         <img src={vscodeLogo} alt="VS Code" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
                                     </div>
                                     <div className='face3'>
-                                        <img src={firebaseLogo} alt="Firebase" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+                                        <FontAwesomeIcon icon={faAws} color='#FF9900' />
                                     </div>
                                     <div className='face4'>
-                                        <FontAwesomeIcon icon={faDocker} color='#2496ED' />
-                                    </div>
-                                    <div className='face5'>
                                         <img src={azureDevOpsLogo} alt="Azure DevOps" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
                                     </div>
+                                    <div className='face5'>
+                                        <FontAwesomeIcon icon={faLinux} color='#000000' />
+                                    </div>
                                     <div className='face6'>
-                                        <FontAwesomeIcon icon={faUnity} color='#000000' />
+                                        <FontAwesomeIcon icon={faDocker} color='#2496ED' />
                                     </div>
                                 </>
                             )}
-                            
+
                             {/* Libraries/Frameworks Cube Faces */}
                             {activeSection === 'libraries' && (
                                 <>
@@ -300,16 +328,16 @@ Hi, my name is Aditya Ramakrishnan and I’m a second year student studying comp
                                         <FontAwesomeIcon icon={faReact} color='#61DAFB' />
                                     </div>
                                     <div className='face3'>
-                                        <img src={openaiLogo} alt="OpenAI" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+                                        <FontAwesomeIcon icon={faMicrochip} color='#34A853' />
                                     </div>
                                     <div className='face4'>
-                                        <img src={tailwindLogo} alt="TailwindCSS" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+                                        <img src={openaiLogo} alt="OpenAI" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
                                     </div>
                                     <div className='face5'>
-                                        <img src={pytestLogo} alt="Pytest" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+                                        <img src={tailwindLogo} alt="TailwindCSS" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
                                     </div>
                                     <div className='face6'>
-                                        <img src={pygameLogo} alt="Pygame" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+                                        <img src={pytestLogo} alt="Pytest" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
                                     </div>
                                 </>
                             )}

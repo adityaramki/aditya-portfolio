@@ -24,30 +24,30 @@ const Work = () => {
     const workExperiences = [
         {
             id: 1,
-            company: "Humana",
-            position: "Software Engineering Intern",
-            location: "Remote",
-            duration: "Summer 2025",
-            description: "• Built backend for a GenAI stand-up reporting tool at the Humana IT Intern Hackathon using <strong>FastAPI</strong>, <strong>Python</strong>, and <strong>LLMs</strong>, extracting blockers and key topics from <strong>8+</strong> meetings and reducing reporting time by <strong>80%</strong>\n\n• Developed a GenAI <strong>REST API</strong> service using <strong>FastAPI</strong> and <strong>Python</strong> to generate custom summaries of healthcare documents via Humana's <strong>Large Language Model (LLM) Gateway</strong>, streamlining analysis for <strong>10+</strong> teams\n\n• Tested a GenAI summarization service using <strong>Pytest</strong> (<strong>85%</strong> code coverage), containerized the application with <strong>Docker</strong>, and supported deployment to <strong>Azure Kubernetes Service (AKS)</strong> for reliable and scalable delivery\n\n• Moderated a fireside chat with <strong>100+</strong> attendees, developing strategic questions and leading a live discussion with Humana's SVP of Enterprise AI to explore the role of human-centered AI in transforming healthcare operations",
-            technologies: ["Python", "FastAPI", "REST APIs", "LLMs", "Docker", "Pytest"]
+            company: "Capital One",
+            position: "Software Engineer Intern - Business Risk Operations",
+            location: "Plano, Texas",
+            duration: "June 2026 - Aug 2026",
+            description: "• Built an end-to-end <strong>RAG</strong> pipeline indexing <strong>3,700+</strong> regulatory requirements in <strong>Chroma</strong>, using semantic retrieval and <strong>GPT-OSS-120B</strong> to generate compliance questions, reducing requirement applicability mapping time by <strong>85%</strong>\n\n• Engineered an adapter pipeline to ingest business process data from <strong>Snowflake</strong> into the compliance questionnaire platform, enabling automated population of questionnaire answers and saving <strong>2,200+</strong> hours annually\n\n• Designed a <strong>FastAPI</strong> validation service for AI-generated compliance questions, using a human-in-the-loop framework to flag low-quality questions and escalate them for review, improving question generation reliability by <strong>70%</strong>",
+            technologies: ["RAG", "Chroma", "FastAPI", "Snowflake", "Python", "LLMs"]
         },
         {
             id: 2,
-            company: "180 Degrees Consulting",
-            position: "Consultant",
-            location: "Michigan State University",
-            duration: "2024 - Present",
-            description: "• Conceptualized and created a functional POC for a university-exclusive reselling platform for MSU students using <strong>ReactJS</strong>, visualizing the market opportunity and projecting revenue of up to <strong>$98,000/yr</strong> to prospective investors\n\n• Designed and developed a <strong>ReactJS</strong> website for a local trucking company, deployed on <strong>Vercel</strong>, increasing quote request submissions by <strong>25%</strong> through improved UX and optimized CTAs\n\n• Advised an overseas ed-tech client on industry strategy by developing <strong>8</strong> key performance metrics and benchmarking them against industry standards to strengthen client's market positioning\n\n• Collaborated with <strong>7</strong> business analysts to advise a local baking business, providing website optimization advice and training the owner on data collection methods to enhance customer insights and accelerate growth",
-            technologies: ["Digital Transformations", "Client Work", "Professional Development", "Data Analytics"]
+            company: "Humana",
+            position: "Software Engineer Intern - Enterprise AI",
+            location: "Remote",
+            duration: "May 2025 - Dec 2025",
+            description: "• Developed a GenAI <strong>REST API</strong> service using <strong>FastAPI</strong> and <strong>Python</strong> to generate custom summaries of healthcare documents via Humana's <strong>Large Language Model (LLM) Gateway</strong>, streamlining analysis for <strong>10+</strong> teams\n\n• Implemented a <strong>Pytest</strong> framework to validate a GenAI summarization API (<strong>85%</strong> code coverage), containerized the service with <strong>Docker</strong>, and supported deployment to <strong>Azure Kubernetes Service (AKS)</strong> for scalable delivery\n\n• Created a <strong>FastAPI</strong> service leveraging Microsoft <strong>Azure's Text-to-Speech</strong> to convert SVP meeting transcripts into synthetic-voice podcasts, improving accessibility to executive communication for <strong>10,000+</strong> employees\n\n• Built backend for <strong>ScrumMate</strong>, a GenAI stand-up reporting tool at Humana's IT Intern Hackathon, using <strong>FastAPI</strong>, <strong>Python</strong>, and <strong>LLMs</strong>, extracting blockers and key topics from <strong>8+</strong> meetings and reducing reporting time by <strong>80%</strong>",
+            technologies: ["Python", "FastAPI", "REST APIs", "LLMs", "Docker", "Pytest", "Azure"]
         },
         {
             id: 3,
-            company: "Imagine Software",
-            position: "Project Lead",
-            location: "Michigan State University",
-            duration: "Fall 2024",
-            description: "• Led a team of <strong>4</strong> to create a sales forecasting model using <strong>Python</strong> and the <strong>sktime</strong> library to increase Imagine Software's project variety and expand its service offerings in predictive analytics\n\n• Engineered a full-stack mobile application in a team of <strong>6</strong> by utilizing <strong>React Native</strong> and <strong>Firebase</strong> in order to improve the nutritional awareness of users\n\n• Engaged with a community of <strong>500+</strong> computer science students by collaborating on mobile and web application development, synthesizing a supportive environment for idea-sharing and innovation",
-            technologies: ["React Native", "Google Firebase", "Sktime Forecasting", "Project Management", "Networking"]
+            company: "180 Degrees Consulting MSU",
+            position: "Project Manager / Technology Chair",
+            location: "East Lansing, MI",
+            duration: "Feb 2025 - Present",
+            description: "• Conceptualized and created a proof-of-concept university-exclusive reselling platform for MSU students using <strong>ReactJS</strong> and <strong>Firebase</strong>, visualizing the market opportunity and projecting revenue of up to <strong>$98,000/yr</strong>\n\n• Led the development of a <strong>ReactJS</strong> website for a local trucking company in a team of <strong>4</strong>, deployed on <strong>Vercel</strong>, increasing quote request submissions by <strong>25%</strong> through improved UX design and optimized CTAs",
+            technologies: ["ReactJS", "Firebase", "Vercel", "Project Management", "UX Design"]
         }
     ];
 
@@ -62,7 +62,7 @@ const Work = () => {
                             idx={10}
                         />
                     </h1>
-                    <p>Here's a summary of my professional experience and internships. From enhancing my API development toolkit at Humana, to expanding my business acumen at 180 Degrees Consulting, I've had a diverse set of experiences that have helped me grow as a software engineer and professional.</p>
+                    <p>Here's a summary of my professional experience and internships. From building AI-driven compliance tooling at Capital One, to developing GenAI services at Humana, to leading technology strategy at 180 Degrees Consulting, I've had a diverse set of experiences that have helped me grow as a software engineer and professional.</p>
                     
                     <div className='work-experiences'>
                         {workExperiences.map((experience) => (
